@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import './style.css';
+import './viewport.js';
+import SearchBar from './components/SearchBar/SearchBar.jsx';
+import SwitchFooter from './components/SwitchFooter/SwitchFooter.jsx';
+import ItemList from './components/ItemList/ItemList.jsx';
 
 class App extends Component {
 
@@ -12,8 +16,10 @@ class App extends Component {
 	render() {
 		return (
 			<div className="app">
-				<h1>Todos</h1>
-			</div>
+				<SearchBar />
+				<ItemList />
+				<SwitchFooter />
+			</div>	
 		)
 	}
 }

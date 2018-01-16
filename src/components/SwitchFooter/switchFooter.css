@@ -1,0 +1,27 @@
+.switchfooter-containor {
+    position: relative;
+    height: 7rem;
+    box-sizing: border-box;
+    border-top: 1px solid #999999;
+    display: flex;
+}
+
+.switchfooter-item {
+    height: 100%;
+    flex: 1;
+    text-align: center;
+    color: #333333;
+}
+
+.switchfooter-item:hover {
+    color: #94c2f9;
+}
+
+.switchfooter-item-img {
+    font-size: 28px;
+}
+
+.switchfooter-item-word {
+    display: block;
+    font-size: 16px;
+}
