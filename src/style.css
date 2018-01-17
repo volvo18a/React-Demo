@@ -45,8 +45,18 @@ input:focus {
 
 .header {
     display: flex;
-    height: 8rem;
+    height: 5.6rem;
+    padding: 12px;
     text-align: center;
     justify-content: center;
-    align-items: center
+    align-items: center;
+}
+
+.list-item-right-padding-bottom {
+    padding-bottom: 10px;
+}
+
+.list-item-right-padding-top-bottom {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }

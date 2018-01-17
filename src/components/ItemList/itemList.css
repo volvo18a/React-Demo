@@ -1,3 +1,40 @@
 .itemlist-containor {
     height: calc(100% - 15rem);
+    padding: 12px;
+    padding-bottom: 0;
+    overflow-y: auto;
+}
+
+.item-containor {
+    height: 14rem;
+    padding: 12px;
+    display: flex;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.item-left {
+    width: 8.2rem;
+    height: 11.6rem;
+    padding-right: 26px;
+}
+
+.item-right {
+    height: 11.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item-detail-containor {
+    line-height: 16px;
+}
+
+.item-detail-tag {
+    padding: 3px;
+    background-color: #f3b500;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: '黑体'
 }

@@ -4,6 +4,8 @@
     box-sizing: border-box;
     border-top: 1px solid #999999;
     display: flex;
+    padding: 4px 0;
+    box-sizing: border-box;
 }
 
 .switchfooter-item {
@@ -23,5 +25,5 @@
 
 .switchfooter-item-word {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
 }
