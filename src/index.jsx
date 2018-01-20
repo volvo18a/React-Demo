@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-
+import fetchJsonp from 'fetch-jsonp';
 
 import './style.css';
 import './viewport.js';
@@ -19,22 +18,23 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		const api = 'https://developers.douban.com/wiki/?title=book_v2#get_book_search'
-		// var result = fetchJsonp(api)
-		//   .then(function(response) {
-		// 	return response.json()
-		//   }).then(function(json) {
-		// 	console.log('parsed json', json)
-		//   }).catch(function(ex) {
-		// 	console.log('parsing failed', ex)
-		//   })
+		const api = 'https://api.douban.com/v2/book/search?q=a';
+
+		var result = fetchJsonp(api).then((response) => {
+				return response.json()
+		  }).then((json) => {
+				console.log(json.books)
+				this.setState({items: json.books});
+		  }).catch((ex) => {
+				console.log(ex)
+		  })
 	}
 
 	render() {
 		return (
 			<div className="app">
 				<SearchBar />
-				<ItemList />
+				<ItemList items={this.state.items} />
 				<SwitchFooter />
 			</div>	
 		)
